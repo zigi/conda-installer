@@ -1,0 +1,28 @@
+package:
+  name: zigi
+  version: 3.10
+  
+source:
+  git_url: git@github.com:zigi/zigi.git
+
+build:
+  detect_binary_files_with_prefix: false
+  number: 2 
+  script_env:
+    - ZPREFIX
+
+requirements:
+  run:
+    - git 
+    - bash
+
+  host:
+    - git
+    - bash
+   
+about: 
+  home: https://zigi.rocks
+  license: GNU v3
+  summary: The ISPF GIT client
+
+
